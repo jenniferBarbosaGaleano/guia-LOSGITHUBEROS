@@ -43,3 +43,16 @@
 * **Servicios de repositorio remoto**: GitHub, GitLab, BitBucket, etc.
 
 * **Clientes gráficos para el control de versiones**: gitg, gitkraken, gitblade, sourcetree, etc.
+
+## 2. Que tenemos que saber hacer con Git (y GitHub)
+
+
+### 2.1. Interprete de comando de git-bash
+Comando    | Argumentos              | Función 
+-----------|-------------------------|------------
+**pwd**    |                         | Muestra el directorio actual (Print Working Directory).
+**mkdir**  | &lt;dir>  ó  {nombre directorio}            | Crea un directorio.
+**cd**     | &lt;dir>  ó  {nombre directorio}           | Cambia de directorio (*'cd -': directorio previo*).
+**ls**     | [-l] [-a]               | Muestra los archivos del directorio *(l: detallado; a: incluye ficheros ocultos).*
+**rm**     | &lt;file> ó  {file}            | Elimina un fichero.
+**mv**     | &lt;source> &lt;dest> ó {origen} {destination}  | Mueve o renombra un archivo.
