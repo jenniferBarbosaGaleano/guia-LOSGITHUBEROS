@@ -56,3 +56,20 @@ Comando    | Argumentos              | Función
 **ls**     | [-l] [-a]               | Muestra los archivos del directorio *(l: detallado; a: incluye ficheros ocultos).*
 **rm**     | &lt;file> ó  {file}            | Elimina un fichero.
 **mv**     | &lt;source> &lt;dest> ó {origen} {destination}  | Mueve o renombra un archivo.
+
+### 2.2. Control de versiones local
+
+Comando        		 | Argumentos         | Función 
+---------------------|--------------------|------------
+**git init**   		 |     { nombre_repositorio}             | Crea un repositorio local en el directorio actual.
+**git add**    		 | &lt;file>  ó  {nombre archivo}      | Prepara ficheros para ser confirmados en un repositorio local.
+**git commit** 		 | [-m &lt;message>] ó -m "Descripción cambios"  | Confirma cambios en un repositorio local. *(m: permite escribir el mensaje del commit sin abrir el editor de texto).*	
+**git commit**		|-am "Descripción cambios" | Add y commit en un solo paso
+**git reset**  		 | &lt;file> ó {archivo}	  | Deshacer la operacion de preparar.
+**git reset**  		 | [--soft]  ó  {commit}     | Deshace el add. *(soft: deshace el commit)*
+**git status** 		 |					  | Identificar el estado de un fichero o ficheros en un repositorio local.
+**git checkout**	 | <file>   ó {archivo}		  | Descartar los cambios de un fichero de trabajo mediante la recuperación de una versión almacenada en el repositorio local. 
+**git checkout**     | &lt;branch_name>  ó {nombre_de_rama} | Cambia de rama en el repositorio local.
+**git checkout**	| -b {nombre_de_la_rama}	| Crear una rama y cambiar a ella
+**git branch**	| {nombre_de_tu_nueva_rama}	|Crear una rama en un repositorio local.
+**git diff**   		 | &lt;file>          | Muestra los cambios de un archivo "modificado" con respecto al que hay en el repositorio.
