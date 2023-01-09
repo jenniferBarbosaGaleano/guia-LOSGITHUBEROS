@@ -73,3 +73,28 @@ Comando        		 | Argumentos         | Función
 **git checkout**	| -b {nombre_de_la_rama}	| Crear una rama y cambiar a ella
 **git branch**	| {nombre_de_tu_nueva_rama}	|Crear una rama en un repositorio local.
 **git diff**   		 | &lt;file>          | Muestra los cambios de un archivo "modificado" con respecto al que hay en el repositorio.
+
+### 2.3. Control de versiones centralizado
+
+Comando        		 | Argumentos         								| Función 
+---------------------|-------------------------------------------------------------------------|------------
+**git config** 		 | [--global][--local] http.proxy &lt;domain:port> proxy.wifi.uma.es:3128  | Configurar git para que trabaje trás un proxy.
+**git clone**  		 | &lt;URL> ó {url}         							| Replicar un repositorio remoto localmente en nuestra maquina.
+**git remote** 		 | add &lt;URL> ó add {nombre remoto [origin]} {dirección remoto}										| Replicar un repositorio local en un servidor remoto.
+**git push** 		 | --all &lt;URL> ó --all {nombre remoto [origin]}		    					| Replicar un repositorio local en un servidor remoto.
+**git pull** 		 | 		  											| Traer los cambios de un repositorio remoto a un repositorio local.
+**git fetch** 		 | 		  											| Traer los cambios de un repositorio remoto a un repositorio local.
+**git remote**	| show origin	|	 (mostrar más información del repositorio remoto)
+**git status**	     |	| (saber el estado de los archivos)
+**git log**	         |	                                                              | (ver los cambios y su HEAD)
+**git checkout**	 | master                                                      | (vamos a la rama master, ya que va a ser la receptora de la unión)
+**git pull**	     | master                                                      | (asegurar que la rama master está totalmente actualizada)
+**git branch**	     | -a	                                                      | (lista las distintas ramas que hay en nuestro repositorio)
+**git merge**	     | branch_name	                                                  | (sustituyendo branch name por la rama origen de la unión, donde están los cambios que vamos a unir a la rama master)
+**git branch**	     | -d branch_name                                              | (una vez acabado el merge hay que eliminar la rama sobrante, esto no borra los commits realizados, sólo el puntero con ese nombre)
+**git merge** 		 |            										          | Resolver los conflictos que se pueden producir al traerse estos cambios.
+**git commit**		 | [-m &lt;message>] ó -m {nombre del commit}
+**git add**		 	 |					  								          | Enviar los cambios de un repositorio local a uno remoto.
+**git push**		 | &lt;remote> &lt;branch> ó -u {origin} {nombre_de_la_rama}  | Enviar una rama local al repositorio remoto.
+**git pull** 	     | &lt;remote> ó {repositorio remoto}				          | Incorporar a ramas locales cambios que se producen en el repositorio remoto.
+**git request-pull** | [-p] &lt;start> &lt;url> &lt;end>			                      | Realizar un pull-request entre dos ramas de un repositorio remoto.
