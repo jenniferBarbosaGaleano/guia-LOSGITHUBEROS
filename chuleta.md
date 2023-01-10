@@ -98,3 +98,17 @@ Comando        		 | Argumentos         								| Función
 **git push**		 | &lt;remote> &lt;branch> ó -u {origin} {nombre_de_la_rama}  | Enviar una rama local al repositorio remoto.
 **git pull** 	     | &lt;remote> ó {repositorio remoto}				          | Incorporar a ramas locales cambios que se producen en el repositorio remoto.
 **git request-pull** | [-p] &lt;start> &lt;url> &lt;end>			                      | Realizar un pull-request entre dos ramas de un repositorio remoto.
+
+### 2.4. Control de versiones distribuido
+
+Comando              | Argumentos                   | Función 
+---------------------|------------------------------|------------
+**git branch**       | &lt;branch_name>             | Crea una rama nueva en el repositorio local.
+**git push**         | [-u] &lt;remote> &lt;branch> | Envía la rama al repositorio remoto.
+
+Operaciones de Github:
+
+Operacion                                 | Descripción
+------------------------------------------|------------
+**pull request** (entre ramas)            | En la página principal del repositorio: "New pull request" y se selecciona la rama deseada
+**pull request** (entre repositorios)     | Dentro de la misma opción anterior, seleccionando: "compare across forks"
